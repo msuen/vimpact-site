@@ -1,0 +1,28 @@
+.foot {
+	padding: 60px 0;
+}
+
+.foot__section-wrap {
+	@include make-row();
+	max-width: 991px;
+	padding: 0 40px;
+	@include center-block;
+	@include bp-md {
+		padding: 0;
+	}
+}
+
+.foot__section {
+	@include make-sm-column(2);
+	@extend .has-small-font;
+	margin-bottom: 20px;
+}
+
+.foot__header {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.foot__link {
+	display: block;
+}

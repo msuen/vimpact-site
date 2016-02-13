@@ -1,0 +1,115 @@
+@mixin background-size($backgroundSize) {
+  -webkit-background-size: $backgroundSize;
+  -moz-background-size: $backgroundSize;
+  background-size: $backgroundSize;
+  -o-background-size: $backgroundSize;
+}
+
+@mixin box-shadow($boxShadow) {
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  -o-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+}
+
+@mixin border-radius($borderRadiusTopLeft, $borderRadiusTopRight, $borderRadiusBottomLeft, $borderRadiusBottomRight) {
+  -webkit-border-radius: $borderRadiusTopLeft $borderRadiusTopRight $borderRadiusBottomLeft $borderRadiusBottomRight;
+  -moz-border-radius: $borderRadiusTopLeft;
+  -o-border-radius: $borderRadiusTopLeft $borderRadiusTopRight $borderRadiusBottomLeft $borderRadiusBottomRight;
+  border-radius: $borderRadiusTopLeft $borderRadiusTopRight $borderRadiusBottomLeft $borderRadiusBottomRight;
+}
+
+@mixin calc($property, $value) {
+  #{$property}: -webkit-calc(#{$value});
+  #{$property}: calc(#{$value});
+}
+
+@mixin opacity($opacityNum) {
+  opacity: $opacityNum;
+  filter: alpha(opacity=$opacityNum*10);
+}
+
+@mixin transition($transitionProperty, $transitionType, $transitionLength) {
+  -webkit-transition: $transitionProperty $transitionType $transitionLength;
+  -moz-transition: $transitionProperty $transitionType $transitionLength;
+  -o-transition: $transitionProperty $transitionType $transitionLength;
+  transition: $transitionProperty $transitionType $transitionLength;
+}
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str}; 
+}
+
+@mixin bp-xs {
+  @media only screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin bp-sm {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

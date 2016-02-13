@@ -1,0 +1,33 @@
+.button {
+	margin: 20px 0;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	@include button-size(8px, 20px, 85%, 1.45, 6px);
+}
+
+.button--clear {
+    border: 1px $white solid;
+    background-color: transparent;
+    @include box-shadow(none);
+    color: $white;
+}
+
+.button--blue {
+    background-color: $vocalid-blue;
+    @include box-shadow(none);
+    color: $white;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    &:hover {
+        background-color: darken( $vocalid-blue,10%);
+    }
+}
+
+.button--red {
+    background-color: #ff6d18;
+    @include box-shadow(none);
+    color: $white;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    &:hover {
+        background-color: darken( #ff6d18,10%);
+    }
+}

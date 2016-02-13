@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){var n=$(window).innerHeight();$(".is-full-height").css("height",n)}n(),$(window).resize(function(){n()}),window.sr=ScrollReveal().reveal(".hero__image"),$(function(){$("button").click(function(){$.scrollTo($("#explainer"),{duration:200})})})});

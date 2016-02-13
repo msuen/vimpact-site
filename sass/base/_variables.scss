@@ -1,0 +1,55 @@
+// Colors
+
+$white: #fff;
+$black: #333;
+$blue-chill: #0E7194;
+$green: #4baa4e;
+$purple: #664a63;
+$yellow: #f2bb4c;
+$red-damask: #d95c48;
+$red-damask-dark: #c95542;
+$red-damask-hover: #9c4233;
+$twitter-blue: #64b6ee;
+$twitter-blue-dark: #5396c4;
+$twitter-blue-hover: #4985ae;
+$facebook-blue: #526fa6;
+$facebook-blue-dark: #3d547e;
+$facebook-blue-hover: #304162;
+$dark-blue: #2A2C39;
+$light-dark-blue: #747891;
+$light-grey: #f8f9fb;
+$grey-button: darken(#c0c0c0, 10%);
+$vocalid-blue: #219bc8;
+$vocalid-blue-dark: darken($vocalid-blue, 10%);
+$vocalid-blue-darker: darken($vocalid-blue, 20%);
+$portal-red: rgb(255, 25, 1);
+$portal-red-dark: rgb(205, 19, 0);
+$portal-red-darker: #810c00;
+
+$dimensionNum960: 30.8px;
+$dimensionNum1152: 34.966666667px;
+$dimensionNumSmall: 38.6px;
+$dimensionNum1440: 42.633333333px;
+$dimensionNumLarge: 48.866666667px;
+$dimensionNumXSmall: 49px;
+$dimensionNumLarger: 67.866666667px;
+
+$transparent-black: rgba(0, 0, 0, 0.8);
+$transparent-white: rgba(255, 255, 255, 0.8);
+
+// Typography
+
+$header-font: "HalisR-Bold", Helvetica, sans-serif;
+$body-font: "HalisR-ExtraLight", Helvetica, sans-serif;
+
+// Divs
+
+$box-shadow: 0 1px 3px rgba(0,0,0,.6);
+$box-side: 0px 9px 0px #e0dddd, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-hover: 0px 9px 0px #999, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-red: 0px 9px 0px #c95542, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-red-hover: 0px 9px 0px #9c4233, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-twitter: 0px 9px 0px #5396c4, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-twitter-hover: 0px 9px 0px #4985ae, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-facebook: 0px 9px 0px #3d547e, 0px 9px 3px rgba(0,0,0,.7);
+$box-side-facebook-hover: 0px 9px 0px #304162, 0px 9px 3px rgba(0,0,0,.7);

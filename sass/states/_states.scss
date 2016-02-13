@@ -1,0 +1,31 @@
+.is-centered {
+	@include center-block();
+	text-align: center;
+}
+
+.is-padded {
+	padding: 100px;
+	&-small {
+		padding: 40px;
+	}
+	&-v {
+		padding: 100px 0;
+	}
+	&-v-small {
+		padding: 40px 0;
+	}
+}
+
+.has-border {
+	border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.has-grey-bg {
+	background-color: $light-grey;
+}
+
+.has-orange-bg {
+	background: #f46b45; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f46b45 , #eea849); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f46b45 , #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
