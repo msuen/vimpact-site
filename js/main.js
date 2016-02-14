@@ -13,7 +13,8 @@ $(document).ready(function() {
 
 	$(function(){
 	    $("button").click(function(){
-	      $.scrollTo($("#explainer"), { duration: 200});
+	      $.scrollTo($("#slide-2"), { duration: 200});
 	    });
 	});
+
 });

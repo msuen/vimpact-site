@@ -81,8 +81,11 @@
 .hero__image-wrapper {
 	text-align: center;
 	@include make-sm-column(4);
+	position: relative;
 	@include bp-sm {
 		@include vertical-align(relative);
+		// position: fixed;
+		// right: 50px;
 	}
 }
 
