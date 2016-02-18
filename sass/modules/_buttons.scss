@@ -13,12 +13,12 @@
 }
 
 .button--blue {
-    background-color: $vocalid-blue;
+    background-color: $facebook-blue;
     @include box-shadow(none);
     color: $white;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
     &:hover {
-        background-color: darken( $vocalid-blue,10%);
+        background-color: darken( $facebook-blue,10%);
     }
 }
 
